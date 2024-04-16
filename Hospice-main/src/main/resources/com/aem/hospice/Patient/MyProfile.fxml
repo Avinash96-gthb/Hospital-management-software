@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aem.hospice.Patient.MyProfileController">
+   <left>
+      <VBox prefHeight="292.0" prefWidth="143.0" style="-fx-background-color: #A2A2A1FF;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="428.0" prefWidth="162.0">
+               <children>
+                  <AnchorPane layoutX="-49.0" layoutY="2.0" prefHeight="427.0" prefWidth="178.0">
+                     <children>
+                        <AnchorPane layoutX="65.0" prefHeight="428.0" prefWidth="147.0">
+                           <children>
+                              <Button layoutX="-16.0" layoutY="4.0" mnemonicParsing="false" onAction="#OverviewButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Overview">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="-16.0" layoutY="47.0" mnemonicParsing="false" onAction="#dpButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Doctor prescription">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="-16.0" layoutY="90.0" mnemonicParsing="false" onAction="#medicineButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Medicine">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="-16.0" layoutY="133.0" mnemonicParsing="false" onAction="#lrButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Lab report">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="-16.0" layoutY="176.0" mnemonicParsing="false" onAction="#PatientExpanseButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Patient Exapanse">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="-16.0" layoutY="219.0" mnemonicParsing="false" onAction="#SignOutButton" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #F1F4FFFF;" text="Signout">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="21.0" fitWidth="36.0" layoutX="-10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/ov.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="22.0" fitWidth="32.0" layoutX="-11.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/dp.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="44.0" fitWidth="31.0" layoutX="-13.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/med.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="-10.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/lr.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" layoutX="-13.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/exp.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="19.0" fitWidth="29.0" layoutX="-9.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #00203FFF;">
+                                 <image>
+                                    <Image url="@../../img/sout.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="108.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="108.0" prefWidth="795.0" style="-fx-background-color: #95DBE5FF;">
+               <children>
+                  <Button layoutY="-1.0" mnemonicParsing="false" onAction="#ProfileButton" prefHeight="113.0" prefWidth="176.0" style="-fx-background-color: #97BC62FF;" text="My Profile">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="67.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/mp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <TextField layoutX="627.0" layoutY="11.0" prefHeight="26.0" prefWidth="139.0" promptText="Search " />
+                  <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="743.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/search.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="39.0" prefWidth="798.0" style="-fx-background-color: #95DBE5FF;">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="205.0" layoutX="605.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/aemfooter.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </bottom>
+   <right>
+        <AnchorPane prefHeight="408.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="11.0" layoutY="33.0" text="Name" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_name" layoutX="79.0" layoutY="29.0" prefHeight="26.0" prefWidth="214.0" />
+            <Label layoutX="10.0" layoutY="74.0" prefHeight="19.0" prefWidth="78.0" text="UID" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_uid" layoutX="80.0" layoutY="71.0" prefHeight="26.0" prefWidth="214.0" />
+            <Label layoutX="14.0" layoutY="172.0" text="Age" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_age" layoutX="80.0" layoutY="169.0" prefHeight="26.0" prefWidth="213.0" />
+            <Label layoutX="6.0" layoutY="4.0" prefHeight="20.0" prefWidth="178.0" text="Personal Detials" textFill="#e47711">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="208.0" text="Contact info" textFill="#e47711">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="243.0" text="Mail" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_mail" layoutX="78.0" layoutY="238.0" prefHeight="17.0" prefWidth="217.0" />
+            <Button fx:id="bt_save" layoutX="502.0" layoutY="390.0" mnemonicParsing="false" onAction="#bt_save_pressed" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #3710e0;" text="Save" textFill="#dedbea">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="bt_clear" layoutX="373.0" layoutY="391.0" mnemonicParsing="false" onAction="#bt_clear_pressed" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #3710e0;" text="Clear" textFill="#dedbea">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="331.0" layoutY="7.0" prefHeight="20.0" prefWidth="218.0" text="Previous Medical History" textFill="#e47711">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_medicalhistory" layoutX="332.0" layoutY="38.0" prefHeight="154.0" prefWidth="259.0" />
+            <Label layoutX="10.0" layoutY="121.0" prefHeight="19.0" prefWidth="78.0" text="Gender" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_gender" layoutX="81.0" layoutY="118.0" prefHeight="26.0" prefWidth="213.0" />
+            <Label layoutX="9.0" layoutY="277.0" text="Password Section" textFill="#e47711">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="312.0" prefHeight="16.0" prefWidth="115.0" text="Old Password" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="354.0" prefHeight="16.0" prefWidth="128.0" text="New Password" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pf_oldpass" layoutX="181.0" layoutY="308.0" />
+            <PasswordField fx:id="pf_newpass" layoutX="182.0" layoutY="351.0" />
+            <PasswordField fx:id="pf_newpass2" layoutX="181.0" layoutY="391.0" />
+            <Label layoutX="10.0" layoutY="392.0" prefHeight="16.0" prefWidth="172.0" text="Retype New Password" textFill="#080604">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+   </right>
+</BorderPane>
